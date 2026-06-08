@@ -1,0 +1,47 @@
+{
+  "total_pages": 3,
+  "sections": [
+    {
+      "title": "Introduction to Machine Learning",
+      "summary": "This section introduces machine learning as a branch of AI where systems learn patterns from data.",
+      "page_numbers": [
+        1
+      ],
+      "children": [
+        {
+          "page_number": 1,
+          "summary": "Machine learning is a branch of AI where systems learn patterns directly from data, rather",
+          "text": "What Is Machine Learning?\nMachine learning is a branch of AI where systems learn patterns from data rather than being programmed with explicit rules. A developer does not write \"if temperature > 30 then classify as hot\" \u2014 instead, a model is trained on thousands of labelled examples until it discovers that boundary on its own. This makes ML useful for problems where rules are too complex to write by hand, such as image recognition or language understanding. Most production ML today is supervised learning, where every training example comes with a label the model learns to predict."
+        }
+      ]
+    },
+    {
+      "title": "Data Preparation and Feature Engineering",
+      "summary": "This section highlights the importance of data quality, profiling, and feature engineering for robust ML performance.",
+      "page_numbers": [
+        2
+      ],
+      "children": [
+        {
+          "page_number": 2,
+          "summary": "Data quality is the most significant factor for production ML performance, often outweighing model architecture. Engineers must profile data for issues such as missing values, class imbalance, and label errors before model building. Feature engineering is crucial for transforming raw data into effective numerical inputs, even enhancing deep learning models on structured data.",
+          "text": "Data Quality and Feature Engineering\nThe biggest factor in production ML performance is data quality, not model architecture. A simple logistic regression trained on clean representative data typically beats a complex neural network trained on noisy biased data. Before building any model, engineers should profile their data for missing values, class imbalance, and label errors. Feature engineering translates raw data into numerical inputs a model can exploit \u2014 a timestamp becomes day-of-week and is-weekend, a purchase history becomes a recency score and a category flag. In deep learning, networks can learn some features automatically, but explicit feature engineering still helps on structured tabular data."
+        }
+      ]
+    },
+    {
+      "title": "Algorithm Selection",
+      "summary": "This section provides guidance and recommendations for selecting appropriate machine learning algorithms.",
+      "page_numbers": [
+        3
+      ],
+      "children": [
+        {
+          "page_number": 3,
+          "summary": "This section discusses algorithm selection, recommending starting",
+          "text": "Choosing an Algorithm and Avoiding Overfitting\nAlgorithm selection should start with the simplest thing that could possibly work. Linear models are fast and interpretable. Gradient boosted trees win most tabular benchmarks. Neural networks excel at images and text. A model that memorises training data rather than learning general patterns will fail on new data \u2014 this is overfitting. Signs include training accuracy far above validation accuracy. Regularisation techniques like L2 weight penalties and dropout constrain model complexity. Early stopping halts training before validation loss starts rising. Cross-validation gives a more reliable generalisation estimate than a single train/test split."
+        }
+      ]
+    }
+  ]
+}
